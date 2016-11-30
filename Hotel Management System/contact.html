@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+ <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+     <title>Contact</title>
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+  </head>
+  
+  
+     <body>
+      
+  
+    <nav class="navbar navbar-inverse navbar-static-top " role="navigation">
+       <div class="container-fluid">
+           <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-Options-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+             </button>
+           <a class="navbar-brand" href="#"><img src="images/Devilwolf.png" class="img-responsive"</a>
+       
+          </div>
+           
+          <div class="collapse navbar-collapse navbar-right" id="bs-Options-navbar-collapse-1" >
+             <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li ><a href="index.html">Contact</a></li>
+                <li class="dropdown">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Options <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                   <li><a href="#">Link1</a></li>
+                   <li><a href="#">Link2</a></li>
+                   <li><a href="#">Link3</a></li>
+                   <li class="divider"></li>
+                   <li><a href="#">Separated link</a></li>
+                   <li class="divider"></li>
+                   <li><a href="#">One more separated link</a></li>
+             </ul>
+            </li>
+         </ul>
+       </div>
+     <div>  
+   </nav>
+   
+   
+  <div class="container">
+      <div class="row">
+          <div class="col-md-5">
+              <div class="panel panel-default">
+                 <div class="panel-heading">
+                 <h4 class="panel-title">Reach Us @</h4>
+                 </div>
+              <div class="panel-body">
+                 
+                <address>
+                    <strong>Devilwolf</strong><br>
+                     Road 19,House 41<br>
+                     Nikunjo-2<br>
+                     Dhaka.
+                 </address>
+           </div>
+           </div>
+           </div>
+      <div class="col-md-7">
+          <div class="panel panel-default">
+           <div class="panel-heading">
+                 <h4 class="panel-title">Contact Information@</h4>
+                 </div>
+          <div class="panel-body">
+          <form>
+             <div class="form-group">
+                <label for="contactname">Name</label>
+                <input type="text" class="form-control" id="contactname" placeholder="Enter Name">
+            </div>
+              <div class="form-group">
+                 <label for="contactemail">Email</label>
+                 <input type="text" class="form-control" id="contactemail" placeholder="Enter Email">
+              </div>
+                
+               <div class="form-group">
+                   <label for="contactMessage">Message</label>
+                    <textarea class="form-control" id="contactMessage" rows="6" placeholder="Enter Message"></textarea>
+               </div>
+               
+               
+               <div>
+               <select class="form-control">
+                           <option>1</option>
+                           <option>2</option>
+                          <option>3</option>
+                            <option>4</option>
+                              <option>5</option>
+                 </select>
+                </div>
+                   <button type="button" id="contactbtn" class="btn btn-default">Submit</button>
+         </form>
+              
+               
+      </div>
+      </div>        
+      </div>
+  </div> 
+   
+   
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-5">
+                <h4>Reach Us @</h4>
+                <address>
+                     Road 19,House 41<br>
+                     Nikunjo-2<br>
+                     Dhaka.
+                  </address>
+                </div>  
+            </div>
+            
+            <div class="bottom-footer">
+                 <div class="col-md-5">Copyright devilwolf-It</div>
+                 <div class="col-md-7">
+                     <ul class="footer-nav">
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="blog.html">Blog</a></li>
+                         <li><a href="content.html">Content</a></li>
+                         <li><a href="link.html ">Link</a></li>
+                         
+                     
+                 </div>
+            </div>
+            </div>
+      </footer>
+         
+         
+         <script src="js/bootstrap.min.js"></script>
+         <script src="js/jquery.js"></script>
+      
+     <script>
+
+        function validateText(id)
+         {
+           if($("#"+id).val()==null || $("#"+id).val()=="")
+           {  
+               var div = $("#"+id).closest("div");
+                div.addclass("has-error");
+               
+              return false;
+              
+               
+           }
+            
+            
+        }
+
+        $(document).ready(
+  
+          function()
+          {
+             
+              $("#contactbtn").click(function()
+              {
+                  validateText("contactname");
+                  
+                  
+              }
+              );
+              
+          }  
+            
+        );
+     
+    </script>    
+ 
+    
+  
+   </body>
+   
+   </html>
+
+
